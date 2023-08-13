@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Smart Finance</string>
     <string name="table_1_name">First table</string>
+    <string name="button_table">On</string>
 </resources>
