@@ -1,4 +1,4 @@
-package com.example.smartfinance;
+package com.example.smart_finance;
 
 import org.junit.Test;
 
