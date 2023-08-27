@@ -6,6 +6,15 @@
     <string name="category_name_util">Utilities</string>
     <string name="category_name_street_food">Street food</string>
     <string name="profile">Profile</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="home">Home</string>
+    <string name="statistic">Statistic</string>
+    <string name="finance_up">Finance Up</string>
+    <string name="finance_down">Finance Down</string>
+    <string name="fin_up">Дохід</string>
+    <string name="fin_down">Витрати</string>
+    <string name="stat">Статистика</string>
 </resources>

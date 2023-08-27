@@ -3,7 +3,7 @@
 <group android:checkableBehavior="single">
     <item android:id="@+id/home_page"
         android:icon="@drawable/baseline_home_24"
-        android:title="@string/app_name"/>
+        android:title="@string/home"/>
     <item android:id="@+id/shopping"
         android:icon="@drawable/icon_name_shopping_cart"
         android:title="@string/category_name_shop"/>
@@ -26,10 +26,10 @@
             <group android:checkableBehavior="single">
                 <item android:id="@+id/login"
                     android:icon="@drawable/fi_rr_sign_in"
-                    android:title="@string/category_name_util"/>
+                    android:title="@string/login"/>
                 <item android:id="@+id/logout"
                     android:icon="@drawable/fi_rr_sign_out"
-                    android:title="@string/category_name_util"/>
+                    android:title="@string/logout"/>
             </group>
         </menu>
     </item>
