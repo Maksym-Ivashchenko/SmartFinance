@@ -6,28 +6,30 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_money"
+    android:background="@color/secondary"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="?attr/actionBarSize"
         android:id="@+id/toolbar"
         android:elevation="4dp"
-        android:background="@color/lavender"
-        />
+        android:background="@color/black"
+        android:theme="@style/ThemeOverlay.AppCompat.navTheme"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-    <FrameLayout
-        android:id="@+id/frame_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
-    </LinearLayout>
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
@@ -46,16 +48,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:background="@color/lavender"
+            android:backgroundTint="@color/black"
             app:fabCradleMargin="10dp"
-            app:fabCradleRoundedCornerRadius="50dp">
+            app:fabCradleRoundedCornerRadius="30dp">
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottomNavigationView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
-                android:background="@color/white"
+                android:background="@android:color/transparent"
+                android:theme="@style/ThemeOverlay.AppCompat.navTheme"
+                app:itemIconSize="30sp"
                 app:labelVisibilityMode="labeled"
                 app:menu="@menu/bottom_menu" />
 
@@ -63,15 +67,16 @@
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
-            android:layout_width="343dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="@color/toxic"
             android:contentDescription="@string/finance_down"
-            android:src="@drawable/baseline_add_24"
-            app:layout_anchor="@id/bottomNavigationView"
-            app:layout_anchorGravity="top|center"
-            app:maxImageSize="40dp"
-            app:tint="@color/lavender" />
+            android:src="@drawable/mdi_light_plus"
+            app:layout_anchor="@+id/bottomAppBar"
+            app:layout_anchorGravity="center|top"
+            app:maxImageSize="30dp"
+            app:tint="@color/black" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
 </androidx.drawerlayout.widget.DrawerLayout>

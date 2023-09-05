@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/black"
+    tools:showIn="navigation_view">
 
     <item
         android:id="@+id/home"
-        android:title="@string/home"
-        android:icon="@drawable/baseline_home_24"
-        />
+        android:icon="@drawable/home"
+        android:title="@string/home" />
 
     <item
-        android:id="@+id/finance_up"
-        android:title="@string/fin_up"
-        android:icon="@drawable/finance_up"/>
+        android:id="@+id/diagram"
+        android:icon="@drawable/chart_bar"
+        android:title="@string/diagrams" />
 
     <item
         android:id="@+id/action_bottom"
-        android:title=""
-        android:enabled="false"/>
+        android:enabled="false"
+        android:title="" />
 
     <item
-        android:id="@+id/finance_down"
-        android:title="@string/fin_down"
-        android:icon="@drawable/finance_down"/>
+        android:id="@+id/reports"
+        android:icon="@drawable/note_text"
+        android:title="@string/reports" />
 
     <item
-        android:id="@+id/statistic"
-        android:title="@string/stat"
-        android:icon="@drawable/diagram"/>
+        android:id="@+id/profile"
+        android:icon="@drawable/account"
+        android:title="@string/profile" />
 
 </menu>

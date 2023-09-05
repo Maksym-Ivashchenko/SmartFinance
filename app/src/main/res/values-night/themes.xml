@@ -1,7 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.MyApplication" parent="Theme.MaterialComponents.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="Base.Theme.SmartFinance" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/toxic</item>
+        <item name="android:statusBarColor">@color/toxic</item>
+    </style>
+
+    <style name="ThemeOverlay.AppCompat.navTheme" parent="Base.Theme.SmartFinance">
+        <item name="colorPrimary">@color/toxic</item>
+        <item name="colorOnContainer">@color/white</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
     </style>
 </resources>

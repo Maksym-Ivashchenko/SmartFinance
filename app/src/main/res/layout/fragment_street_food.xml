@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StatisticFragment">
+    tools:context=".StreetFoodFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/statistic"
+        android:text="@string/category_name_street_food"
         android:gravity="center"
         android:textSize="30sp"
         android:textColor="@android:color/holo_orange_dark"/>
